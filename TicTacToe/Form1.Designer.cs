@@ -80,14 +80,12 @@
             // 
             // start
             // 
-            this.start.BackColor = System.Drawing.Color.Transparent;
-            this.start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.start.Location = new System.Drawing.Point(309, 211);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(160, 65);
             this.start.TabIndex = 4;
             this.start.Text = "Start";
-            this.start.UseVisualStyleBackColor = false;
+            this.start.UseVisualStyleBackColor = true;
             this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // Title
@@ -103,14 +101,12 @@
             // 
             // scores
             // 
-            this.scores.BackColor = System.Drawing.Color.Transparent;
-            this.scores.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.scores.Location = new System.Drawing.Point(309, 332);
             this.scores.Name = "scores";
             this.scores.Size = new System.Drawing.Size(160, 65);
             this.scores.TabIndex = 6;
             this.scores.Text = "Scores";
-            this.scores.UseVisualStyleBackColor = false;
+            this.scores.UseVisualStyleBackColor = true;
             // 
             // credits
             // 
