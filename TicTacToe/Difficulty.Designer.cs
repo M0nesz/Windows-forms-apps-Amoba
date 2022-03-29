@@ -107,7 +107,7 @@
             this.difficulty_hard.AutoSize = true;
             this.difficulty_hard.BackColor = System.Drawing.Color.Transparent;
             this.difficulty_hard.Font = new System.Drawing.Font("Eras Light ITC", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.difficulty_hard.Location = new System.Drawing.Point(477, 112);
+            this.difficulty_hard.Location = new System.Drawing.Point(477, 104);
             this.difficulty_hard.Name = "difficulty_hard";
             this.difficulty_hard.Size = new System.Drawing.Size(104, 46);
             this.difficulty_hard.TabIndex = 9;
@@ -124,6 +124,7 @@
             this.difficulty_arrow_right.Size = new System.Drawing.Size(33, 29);
             this.difficulty_arrow_right.TabIndex = 15;
             this.difficulty_arrow_right.UseVisualStyleBackColor = false;
+            this.difficulty_arrow_right.Click += new System.EventHandler(this.difficulty_arrow_right_Click);
             // 
             // player1name
             // 
@@ -228,13 +229,14 @@
             this.difficulty_arrow_left.Size = new System.Drawing.Size(33, 29);
             this.difficulty_arrow_left.TabIndex = 24;
             this.difficulty_arrow_left.UseVisualStyleBackColor = false;
+            this.difficulty_arrow_left.Click += new System.EventHandler(this.difficulty_arrow_left_Click);
             // 
             // start
             // 
             this.start.BackColor = System.Drawing.Color.Transparent;
             this.start.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.start.Font = new System.Drawing.Font("Eras Light ITC", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.start.Location = new System.Drawing.Point(324, 514);
+            this.start.Location = new System.Drawing.Point(326, 473);
             this.start.Name = "start";
             this.start.Size = new System.Drawing.Size(160, 65);
             this.start.TabIndex = 25;
