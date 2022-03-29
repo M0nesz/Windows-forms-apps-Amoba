@@ -86,6 +86,7 @@
             this.start.TabIndex = 4;
             this.start.Text = "Start";
             this.start.UseVisualStyleBackColor = true;
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // Title
             // 
