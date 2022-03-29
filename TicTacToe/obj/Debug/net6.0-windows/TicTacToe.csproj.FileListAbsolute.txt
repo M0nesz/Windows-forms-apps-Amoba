@@ -21,3 +21,4 @@ C:\Users\Lenovo\Desktop\eheh\TicTacToe\obj\Debug\net6.0-windows\TicTacToe.Game.r
 C:\Users\Lenovo\Desktop\eheh\TicTacToe\obj\Debug\net6.0-windows\TicTacToe.Game_over.resources
 C:\Users\Lenovo\Desktop\eheh\TicTacToe\obj\Debug\net6.0-windows\TicTacToe.Pause_screen.resources
 C:\Users\Lenovo\Desktop\eheh\TicTacToe\obj\Debug\net6.0-windows\TicTacToe.Scores.resources
+C:\Users\Lenovo\Desktop\eheh\TicTacToe\obj\Debug\net6.0-windows\TicTacToe.Properties.Resources.resources
