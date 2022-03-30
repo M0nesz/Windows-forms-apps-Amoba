@@ -48,6 +48,64 @@ namespace TicTacToe
                 difficulty_hard.Show();
             }
         }
+
+        private void player1_arrow_left_Click(object sender, EventArgs e)
+        {
+            if (player1_x.Visible)
+            {
+                player1_x.Hide();
+                player1_o.Show();
+            }
+            else if (player1_o.Visible)
+            {
+                player1_x.Show();
+                player1_o.Hide();
+            }
+        }
+
+        private void player1_arrow_right_Click(object sender, EventArgs e)
+        {
+            if (player1_x.Visible)
+            {
+                player1_x.Hide();
+                player1_o.Show();
+            }
+            else if (player1_o.Visible)
+            {
+                player1_x.Show();
+                player1_o.Hide();
+            }
+        }
+
+        private void player2_arrow_left_Click(object sender, EventArgs e)
+        {
+            if (player2_o.Visible)
+            {
+                player2_o.Hide();
+                player2_x.Show();
+            }
+            else if (player2_x.Visible)
+            {
+                player2_o.Show();
+                player2_x.Hide();
+            }
+        }
+
+        private void player2_arrow_right_Click(object sender, EventArgs e)
+        {
+            if (player2_o.Visible)
+            if (player2_o.Visible)
+                {
+                player2_o.Hide();
+                player2_x.Show();
+            }
+            else if (player2_x.Visible)
+            {
+                player2_x.Hide();
+                player2_o.Show();
+            }
+        }
+
         //fájlba kiírja az értékeket 
     }
 }

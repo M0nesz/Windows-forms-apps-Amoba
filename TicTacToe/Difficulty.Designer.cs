@@ -39,7 +39,7 @@
             this.player1_arrow_right = new System.Windows.Forms.Button();
             this.player2name = new System.Windows.Forms.TextBox();
             this.player2_x = new System.Windows.Forms.Label();
-            this.plyer2_o = new System.Windows.Forms.Label();
+            this.player2_o = new System.Windows.Forms.Label();
             this.player2_arrow_right = new System.Windows.Forms.Button();
             this.player1_arrow_left = new System.Windows.Forms.Button();
             this.player2_arrow_left = new System.Windows.Forms.Button();
@@ -148,6 +148,7 @@
             this.player1_arrow_right.Size = new System.Drawing.Size(33, 29);
             this.player1_arrow_right.TabIndex = 17;
             this.player1_arrow_right.UseVisualStyleBackColor = false;
+            this.player1_arrow_right.Click += new System.EventHandler(this.player1_arrow_right_Click);
             // 
             // player2name
             // 
@@ -171,16 +172,16 @@
             this.player2_x.TabIndex = 19;
             this.player2_x.Text = "X";
             // 
-            // plyer2_o
+            // player2_o
             // 
-            this.plyer2_o.AutoSize = true;
-            this.plyer2_o.BackColor = System.Drawing.Color.Transparent;
-            this.plyer2_o.Font = new System.Drawing.Font("Eras Light ITC", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.plyer2_o.Location = new System.Drawing.Point(500, 348);
-            this.plyer2_o.Name = "plyer2_o";
-            this.plyer2_o.Size = new System.Drawing.Size(51, 46);
-            this.plyer2_o.TabIndex = 20;
-            this.plyer2_o.Text = "O";
+            this.player2_o.AutoSize = true;
+            this.player2_o.BackColor = System.Drawing.Color.Transparent;
+            this.player2_o.Font = new System.Drawing.Font("Eras Light ITC", 24F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.player2_o.Location = new System.Drawing.Point(500, 350);
+            this.player2_o.Name = "player2_o";
+            this.player2_o.Size = new System.Drawing.Size(51, 46);
+            this.player2_o.TabIndex = 20;
+            this.player2_o.Text = "O";
             // 
             // player2_arrow_right
             // 
@@ -193,6 +194,7 @@
             this.player2_arrow_right.Size = new System.Drawing.Size(33, 29);
             this.player2_arrow_right.TabIndex = 21;
             this.player2_arrow_right.UseVisualStyleBackColor = false;
+            this.player2_arrow_right.Click += new System.EventHandler(this.player2_arrow_right_Click);
             // 
             // player1_arrow_left
             // 
@@ -205,6 +207,7 @@
             this.player1_arrow_left.Size = new System.Drawing.Size(33, 29);
             this.player1_arrow_left.TabIndex = 22;
             this.player1_arrow_left.UseVisualStyleBackColor = false;
+            this.player1_arrow_left.Click += new System.EventHandler(this.player1_arrow_left_Click);
             // 
             // player2_arrow_left
             // 
@@ -217,6 +220,7 @@
             this.player2_arrow_left.Size = new System.Drawing.Size(33, 29);
             this.player2_arrow_left.TabIndex = 23;
             this.player2_arrow_left.UseVisualStyleBackColor = false;
+            this.player2_arrow_left.Click += new System.EventHandler(this.player2_arrow_left_Click);
             // 
             // difficulty_arrow_left
             // 
@@ -254,7 +258,7 @@
             this.Controls.Add(this.player2_arrow_left);
             this.Controls.Add(this.player1_arrow_left);
             this.Controls.Add(this.player2_arrow_right);
-            this.Controls.Add(this.plyer2_o);
+            this.Controls.Add(this.player2_o);
             this.Controls.Add(this.player2_x);
             this.Controls.Add(this.player2name);
             this.Controls.Add(this.player1_arrow_right);
@@ -287,7 +291,7 @@
         private Button player1_arrow_right;
         private TextBox player2name;
         private Label player2_x;
-        private Label plyer2_o;
+        private Label player2_o;
         private Button player2_arrow_right;
         private Button player1_arrow_left;
         private Button player2_arrow_left;
