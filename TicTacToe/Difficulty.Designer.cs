@@ -246,6 +246,7 @@
             this.start.TabIndex = 25;
             this.start.Text = "Start";
             this.start.UseVisualStyleBackColor = false;
+            this.start.Click += new System.EventHandler(this.start_Click);
             // 
             // Difficulty
             // 

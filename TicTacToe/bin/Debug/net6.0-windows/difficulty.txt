@@ -1,0 +1,1 @@
+normal,Player1,x,Player2,o

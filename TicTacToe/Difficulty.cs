@@ -12,6 +12,7 @@ namespace TicTacToe
 {
     public partial class Difficulty : UserControl
     {
+        
         public Difficulty()
         {
             InitializeComponent();
@@ -106,6 +107,70 @@ namespace TicTacToe
             }
         }
 
-        //fájlba kiírja az értékeket 
+        private void start_Click(object sender, EventArgs e)
+        {
+            /*fájlba kiírja az értékeket 
+            és elindítja a játékot*/
+            string difficulty = "";
+            string player_1_character = "";
+            string player_2_character = "";
+            string name_of_the_player1 = player1name.Text;
+            string name_of_the_player2 = player2name.Text;
+            StreamWriter sw = new StreamWriter("difficulty.txt");
+            if (difficulty_easy.Visible)
+            {
+                difficulty = "easy";
+            }
+            else if (difficulty_normal.Visible)
+            {
+                difficulty = "normal";
+            }
+            else if (difficulty_hard.Visible)
+            {
+                difficulty = "hard";
+            }
+
+            if (player1_o.Visible)
+            {
+                player_1_character = "o";
+            }
+            else if (player1_x.Visible)
+            {
+                player_1_character = "x";
+            }
+
+            if (player2_o.Visible)
+            {
+                player_2_character = "o";
+            }
+            else if (player1_x.Visible)
+            {
+                player_2_character = "x";
+            }
+            sw.WriteLine($"{difficulty},{name_of_the_player1},{player_1_character},{name_of_the_player2},{player_2_character}");
+            sw.Flush();
+            sw.Close();
+            difficulty_arrow_left.Hide();
+            difficulty_arrow_right.Hide();
+            difficulty_easy.Hide();
+            difficulty_hard.Hide();
+            difficulty_normal.Hide();
+            difficulty_title.Hide();
+            player1name.Hide();
+            player1_arrow_left.Hide();
+            player1_arrow_right.Hide();
+            player1_o.Hide();
+            player1_x.Hide();
+            player2name.Hide();
+            player2_arrow_left.Hide();
+            player2_arrow_right.Hide();
+            player2_o.Hide();
+            player2_x.Hide();
+            start.Hide();
+            Game game = new Game();
+            this.Controls.Add(game);
+        }
+
+
     }
 }
