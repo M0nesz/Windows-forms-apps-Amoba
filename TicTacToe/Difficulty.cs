@@ -12,7 +12,32 @@ namespace TicTacToe
 {
     public partial class Difficulty : UserControl
     {
-        
+        private void Button_use_player1()
+        {
+            if (player1_x.Visible)
+            {
+                player1_x.Hide();
+                player1_o.Show();
+            }
+            else if (player1_o.Visible)
+            {
+                player1_x.Show();
+                player1_o.Hide();
+            }
+        }
+        private void Button_use_player2()
+        {
+            if (player2_o.Visible)
+            {
+                player2_o.Hide();
+                player2_x.Show();
+            }
+            else if (player2_x.Visible)
+            {
+                player2_o.Show();
+                player2_x.Hide();
+            }
+        }
         public Difficulty()
         {
             InitializeComponent();
@@ -21,7 +46,6 @@ namespace TicTacToe
             player1_o.Hide();
             player2_x.Hide();
         }
-
         private void difficulty_arrow_left_Click(object sender, EventArgs e)
         {
             if (difficulty_normal.Visible)
@@ -35,7 +59,6 @@ namespace TicTacToe
                 difficulty_normal.Show();
             }
         }
-
         private void difficulty_arrow_right_Click(object sender, EventArgs e)
         {
             if (difficulty_easy.Visible)
@@ -49,64 +72,22 @@ namespace TicTacToe
                 difficulty_hard.Show();
             }
         }
-
         private void player1_arrow_left_Click(object sender, EventArgs e)
         {
-            if (player1_x.Visible)
-            {
-                player1_x.Hide();
-                player1_o.Show();
-            }
-            else if (player1_o.Visible)
-            {
-                player1_x.Show();
-                player1_o.Hide();
-            }
+            Button_use_player1();
         }
-
         private void player1_arrow_right_Click(object sender, EventArgs e)
         {
-            if (player1_x.Visible)
-            {
-                player1_x.Hide();
-                player1_o.Show();
-            }
-            else if (player1_o.Visible)
-            {
-                player1_x.Show();
-                player1_o.Hide();
-            }
+            Button_use_player1();
         }
-
         private void player2_arrow_left_Click(object sender, EventArgs e)
         {
-            if (player2_o.Visible)
-            {
-                player2_o.Hide();
-                player2_x.Show();
-            }
-            else if (player2_x.Visible)
-            {
-                player2_o.Show();
-                player2_x.Hide();
-            }
+            Button_use_player2();
         }
-
         private void player2_arrow_right_Click(object sender, EventArgs e)
         {
-            if (player2_o.Visible)
-            if (player2_o.Visible)
-                {
-                player2_o.Hide();
-                player2_x.Show();
-            }
-            else if (player2_x.Visible)
-            {
-                player2_x.Hide();
-                player2_o.Show();
-            }
+            Button_use_player2();
         }
-
         private void start_Click(object sender, EventArgs e)
         {
             /*fájlba kiírja az értékeket 
@@ -170,7 +151,5 @@ namespace TicTacToe
             Game game = new Game();
             this.Controls.Add(game);
         }
-
-
     }
 }
